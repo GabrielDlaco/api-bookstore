@@ -247,7 +247,7 @@ export const atualizarLivro = async (request,response) => {
     }
 
     await livroSelecionado.save()
-    response.status(200).json({mensagem:"Livro atualizado com sucesso", livro})
+    response.status(200).json({mensagem:"Livro atualizado com sucesso", livroSelecionado})
   } catch (error) {
     console.log(error)
     response.status(500).json({mensagem:"Erro interno ao atualizar um livro"})
@@ -284,4 +284,5 @@ export const deletarLivro = async (request, response) => {
     console.log(error)
     response.status(500).json({mensagem:" Erro interno ao deletar um livro"})
   }
+
 }
