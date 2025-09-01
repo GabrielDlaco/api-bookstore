@@ -1,0 +1,21 @@
+### SPRINT 1 - Autores
+### Listar todos os autores
+GET /api/autores
+
+### Buscar autor por ID
+GET /api/autores/:id       
+
+### Criar novo autor
+POST /api/autores
+content-type: application/json
+
+{}
+
+### Atualizar autor
+PUT /api/autores/:id
+content-type: application/json
+
+{}
+
+### Deletar autor
+DELETE /api/autores/:id
